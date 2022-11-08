@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Radiance-Regular";
+  src: url("fonts/Radiance-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Radiance-Regular";
+  font-size: 1em;
+  line-height: 1em;
+  background-color: #181a1b;
+  color: #e5ded9;
+}
+
+a {
+  color: #e5ded9;
+}
+
+a:hover {
+  color: white;
+}
+
+header {
+  background-color: #313131;
+}
+
+.main-content {
+  min-height: calc(100vh - 124px);
+}
+
+.main-layout-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.active-link {
+  color: white;
+  border-bottom: 3px solid #ff6046;
+}
