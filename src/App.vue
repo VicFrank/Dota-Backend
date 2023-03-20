@@ -19,5 +19,26 @@ export default {
   components: {
     HeaderComponent,
   },
+
+  created() {
+    fetch("https://api.dotabackend.com/api/auth/steam/success", { credentials: "include" })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.success) {
+          const { photos, id, displayName } = res.user;
+
+          this.$store.commit({
+            type: "SET_USER",
+            steamID: id,
+            username: displayName,
+            picture: photos[2].value,
+          });
+        } else {
+          this.$store.commit({
+            type: "LOG_OUT",
+          });
+        }
+      });
+  }
 };
 </script>
