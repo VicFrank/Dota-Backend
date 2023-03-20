@@ -23,6 +23,7 @@ const state = {
 
 // getters
 const getters = {
+  loggedIn: (state: State) => !!state.username,
   userSteamID: (state: State) => state.userSteamID,
   username: (state: State) => state.username,
   profilePictureLink: (state: State) => state.profilePictureLink,

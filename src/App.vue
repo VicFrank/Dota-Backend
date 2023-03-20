@@ -38,6 +38,12 @@ export default {
             type: "LOG_OUT",
           });
         }
+      })
+      .catch((err) => {
+        console.log(err);
+        this.$store.commit({
+            type: "LOG_OUT",
+          });
       });
   }
 };
