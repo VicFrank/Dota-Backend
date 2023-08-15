@@ -6,7 +6,7 @@
       </router-link>
       <ul class="navbar-nav flex-row d-flex text-uppercase">
         <li class="nav-item">
-          <router-link to="/my_projects" class="nav-link" exact-active-class="active-link">
+          <router-link to="/my-projects" class="nav-link" exact-active-class="active-link">
             My Projects
           </router-link>
         </li>
@@ -20,7 +20,9 @@
         <LoginButton />
       </div>
       <div class="ml-auto" v-if="loggedIn">
-        <a href="https://api.dotabackend.com/auth/logout" class="btn" variant="outline-primary">Sign Out</a>
+        <a href="https://api.dotabackend.com/website/logout" class="btn btn-secondary">
+          Sign Out
+        </a>
       </div>
     </div>
   </header>
@@ -36,8 +38,7 @@ export default {
   },
   computed: {
     loggedIn() {
-      return false;
-      // return this.$store.getters.loggedIn;
+      return this.$store.getters.loggedIn;
     },
   },
 };
