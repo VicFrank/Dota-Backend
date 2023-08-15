@@ -20,7 +20,7 @@
         <LoginButton />
       </div>
       <div class="ml-auto" v-if="loggedIn">
-        <a href="https://api.dotabackend.com/website/logout" class="btn btn-secondary">
+        <a href="https://api.dotabackend.com/auth/logout" class="btn btn-secondary">
           Sign Out
         </a>
       </div>
