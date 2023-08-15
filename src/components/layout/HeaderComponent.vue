@@ -6,7 +6,7 @@
       </router-link>
       <ul class="navbar-nav flex-row d-flex text-uppercase">
         <li class="nav-item">
-          <router-link to="/my_projects" class="nav-link" exact-active-class="active-link">
+          <router-link to="/my-projects" class="nav-link" exact-active-class="active-link">
             My Projects
           </router-link>
         </li>

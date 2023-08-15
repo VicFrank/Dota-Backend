@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomePage from "@/components/pages/HomePage.vue";
+import MyProjects from "@/components/pages/MyProjects.vue";
+import Tutorial from "@/components/pages/Tutorial.vue";
 
 Vue.use(VueRouter);
 
@@ -12,6 +14,16 @@ const router = new VueRouter({
       path: "/",
       name: "home",
       component: HomePage,
+    },
+    {
+      path: "/my-projects",
+      name: "my_projects",
+      component: MyProjects,
+    },
+    {
+      path: "/tutorial",
+      name: "tutorial",
+      component: Tutorial,
     },
     // {
     //   path: "/about",
